@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sk_yellow:#FFDE59;
+    --sk_gray:#545454;
+    --transparent-black:rgba(0, 0, 0, .8);
+    --sk_white:#fff;
+    --sk_red:crimson;
+    --sk_dark_gray:#333;
+    --sk_darken_yello:#f8d030;
+}
+html {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+header{
+    font-size: 1.6rem;
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--transparent-black);
+    background-image: url(/images/extraImages/img8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15rem;
+    background-color: var(--sk_white);
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    animation: fadeSomething .2s ease-in-out;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--sk_dark_gray);
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+}
+nav ul li a:hover{
+    background-color: var(--sk_yellow);
+}
+@keyframes fadeSomething {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.second_part{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--sk_white);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8rem 0;
+    text-align: center;
+    
+}
+.btns_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.second_part h1{
+    font-size: 6rem;
+}
+.underline_me{
+    color: var(--sk_yellow);
+}
+.buttons{
+    padding: 1rem 2rem;
+    background-color: var(--sk_yellow);
+    transition: all .2s ease-in-out;
+    border: none;
+    text-decoration: none;
+    color: var(--sk_dark_gray);
+}
+.buttons:hover{
+    background-color:var(--sk_darken_yello);
+}
+
+.my_sections{
+    position: relative;
+    min-height: 80vh;
+    width: 100%;
+    height: auto;
+    padding: 5rem 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+.my_sections:nth-child(even){
+    background-color: #fbfbfb;
+}
+.sub_sections{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1rem;
+}
+.image_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_container img{
+    width: 35rem;
+}
+.text_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+.text_container p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--sk_gray);
+}
+.underline_me2{
+    position: relative;
+    border-bottom: .5rem solid var(--sk_yellow);
+}
+.services_container{
+    position: relative;
+    min-height: 80vh;
+    padding: 0 12rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.service_cart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px lightgray;
+    transition: all .2s ease-in-out;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.9rem;
+}
+.service_cart:hover{
+    transform: translate(-.5rem,-.5rem);
+    box-shadow: 3px 3px 8px lightgray;
+}
+.flags{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    top: -1%;
+    left: -.5%;
+    display: flex;
+}
+.flag{
+    width: 2rem;
+    width: 100%;
+    background-color: var(--sk_gray);
+}
+.flag1{
+    background-color: var(--sk_yellow);
+    height: 80%;
+}
+.tool_carts_container{
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 0 10rem;
+    gap: 1rem;
+}
+.tool_carts_cart{
+    position: relative;
+    box-shadow: 0px 3px 2px lightgray;
+    display: grid;
+    grid-template-rows: 1.8fr .2fr;
+    text-align: center;
+    padding: 1rem 0;
+}
+.tool_carts_cart_img_container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool_carts_cart_img_container img{
+    width: 80%;
+}
+.portfolio_container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.p_project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px lightgray;
+}
+.p_project_img_container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.p_project_img_container img{
+    width: 100%;
+    height: 100%;
+}
+.p_project_stack_container{
+    padding: 1rem; 
+}
+.p_project_stack_container p{
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 1rem 2rem;
+    margin: .5rem;
+}
+.p_project_footer{
+    text-align: center;
+    padding: 1rem;
+}
+.p_project_footer a{
+    text-decoration: none;
+    color: royalblue;
+}
+.uiux_design_portfolio{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    height: 35vh;
+}
+.uiux_project{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.uiux_project img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+.uiux_project img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px lightgray;
+    z-index: 1;
+}
+.my_sections:has(.uiux_design_portfolio){
+    min-height: 50vh;
+}
+.contact_form_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contact_form_container div{
+    padding: 1rem;
+}
+.links_container{
+    font-size: 2rem;
+    position: relative;
+}
+.links_container ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.links_container p{
+    color: var(--sk_dark_gray);
+}
+.links_container ul li a{
+    text-decoration: none;
+    color: var(--sk_dark_gray);
+}
+.links_container ul li a:hover{
+    color: var(--sk_darken_yello);
+    transition: all .2s ease-in-out;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form_container form input, .form_container form textarea{
+    padding: 1rem;
+}
+footer{
+    background-color: var(--sk_dark_gray);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    color: var(--sk_white);
+    position: relative;
+}
+.top{
+    position: fixed;
+    text-align: center;
+    padding: 1rem;
+    bottom: 2%;
+    right: 1%;
+}
+.menu{
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    top: 3%;
+    right: 3%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.menu:hover{
+    background-color: #efefef;
+}
+.menu span{
+    height: .5rem;
+    width: 100%;
+    background-color: var(--sk_dark_gray);
+    border-radius: 1rem;
+}
+header nav ul.active{
+    display: flex;
+}
+.contact_form_container form{
+    width: 100%;
+}
+.toggleImage{
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--transparent-black);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.toggleImage.active{
+    display: flex;
+}
+@keyframes pop {
+    from{
+        opacity: 0;
+        scale: 1.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.toggleImage img{
+    animation: pop 1s ease-in-out ;
+}
+.show{
+    animation: fadeInLeft 1s ease-in-out;
+}
+.showIn{
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from{
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateX(-50%);
+    } 
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateY(-5%);
+    } 
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width:900px){
+   header nav{
+    padding: 0;
+    flex-direction: column;
+    }
+    .logo_container{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    header nav ul{
+        flex-direction: column;
+        width: 100%;
+        background-color: #fbfbfb;
+        display: none;
+    }
+    header nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    .menu{
+        top: 2%;
+        display: flex;
+    }
+    header{
+        min-height: 40vh;
+    }
+    .my_sections{
+        padding: 5rem 2rem;
+        min-height: 50vh;
+    }
+    .sub_sections{
+        gap: 1rem;
+    }
+    .text_container p{
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+    .services_container{
+        padding: 5rem;
+    }
+    .service_cart{
+        padding: 1rem;
+        text-align: center;
+      
+    }
+    .tool_carts_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .portfolio_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .uiux_design_portfolio{
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+    }
+    .toggleImage img{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px) {
+    .sub_sections{
+        grid-template-columns: 1fr;
+    }
+    .text_container p{
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+    }
+    .services_container{
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .service_cart{
+        padding: 1rem;
+        text-align: center;
+        height: 20rem;
+    }
+    .tool_carts_container{
+        grid-template-columns: repeat(3,1fr);
+        padding: 0;
+    }
+    .portfolio_container{
+        grid-template-columns:1fr;
+    }
+    .uiux_design_portfolio{
+        grid-template-columns: 1fr;
+    }
+    .contact_form_container{
+        grid-template-columns: 1fr;
+    }
+    .toggleImage img{
+        width: 95%;
+    }
+}
